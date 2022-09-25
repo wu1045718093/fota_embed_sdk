@@ -7,9 +7,8 @@
 
 
 3. porting
-3.1　配置，非常重要，开发者需要配置相关的flash地址和大小，详细参考arch_interface.h里面的定义，同时需要在sm_flash.h中配置固件存放的地址等信息
-3.2　开发者需要自己实现arch_write_flash, arch_read_flash, arch_erase_flash, 以及sm_system.c跟sm_platform.c中的相关接口函数；
-3.3　开发者需要自己选择的平台实现sm_socket_recv_api，sm_socket_recv_api等socket接口
+3.1　配置，非常重要，开发者需要配置相关的flash地址和大小，详细参考arch_interface.h里面的定义
+3.2　开发者需要自己实现arch_write_flash, arch_read_flash, arch_erase_flash；
 3.4　开发者调用firmware_patch函数实现在本地patch
 3.5　开发者需要自己实现固件下载／验证
 
